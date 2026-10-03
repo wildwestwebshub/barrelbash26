@@ -1,0 +1,2448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PETROL BARREL BASH</title>
+<style type="text/css">
+<!--
+.excel1 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel6 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel2 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel5 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel3 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel4 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:normal;
+}
+p.MsoNormal {margin:0in;
+margin-bottom:.0001pt;
+font-size:12.0pt;
+font-family:"Times New Roman";
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel7 {
+padding:0px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel10 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel12 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel20 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel17 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:1.0pt solid windowtext;
+}
+.excel18 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel19 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel21 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel11 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:none;
+border-right:.5pt solid windowtext;
+border-bottom:.5pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel13 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:none;
+border-right:.5pt solid windowtext;
+border-bottom:.5pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel22 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:none;
+border-right:.5pt solid windowtext;
+border-bottom:.5pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel8 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel14 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel23 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel16 {
+padding:0px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:normal;
+}
+.excel9 {
+padding:0px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:normal;
+}
+.excel15 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:normal;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel24 {
+padding:0px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel32 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:1.0pt solid windowtext;
+}
+.excel33 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel34 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:italic;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel30 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel31 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel27 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:none;
+border-right:.5pt solid windowtext;
+border-bottom:.5pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel28 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:none;
+border-right:.5pt solid windowtext;
+border-bottom:.5pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel25 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel29 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel26 {
+padding:0px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:"Century Gothic", sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:normal;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel35 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel36 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+background:yellow;
+}
+.excel38 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:italic;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+background:yellow;
+}
+.excel37 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel39 {
+padding:0px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel47 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:1.0pt solid windowtext;
+}
+.excel40 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel41 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:italic;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel48 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:1.0pt solid windowtext;
+border-right:.5pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel44 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel46 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel42 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:none;
+border-right:.5pt solid windowtext;
+border-bottom:.5pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel43 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+border-top:none;
+border-right:.5pt solid windowtext;
+border-bottom:.5pt solid windowtext;
+border-left:.5pt solid windowtext;
+}
+.excel49 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:none;
+white-space:normal;
+border-top:1.0pt solid windowtext;
+border-right:none;
+border-bottom:.5pt solid windowtext;
+border-left:none;
+}
+.excel45 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel50 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel51 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel52 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+background:yellow;
+}
+.excel53 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel54 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel55 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel58 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel67 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel56 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel62 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel63 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel68 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel59 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel61 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel57 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel60 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:red;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel64 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:middle;
+border:.5pt solid windowtext;
+white-space:normal;
+}
+.excel65 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:normal;
+}
+.excel66 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:underline;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:normal;
+text-underline-style:single;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel69 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel72 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+background:fuchsia;
+}
+.excel70 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel71 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel73 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel74 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel82 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel85 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel75 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel76 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel83 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel80 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel84 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:left;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel77 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel79 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+background:#FF99CC;
+}
+.excel81 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel78 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel86 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel90 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel93 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel89 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel92 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel87 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel88 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel91 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel94 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel95 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel96 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel97 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.style1 {
+	background-color: transparent;
+	font-weight: bold;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.excel98 {
+padding:0px;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel99 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:700;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel100 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel102 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel101 {
+padding:0px;
+color:black;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:center;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+.excel103 {
+padding:0px;
+color:windowtext;
+font-size:8.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:.5pt solid windowtext;
+white-space:nowrap;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="500" border="1" align="center">
+  <tr>
+    <td colspan="3"><p align="center" class="MsoNormal"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><img src="../images/Nutrena.jpg" alt="BB" width="153" height="33" id="_x0000_i1025" /></span></font></p>
+        <p align="center" class="MsoNormal"><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><a href="../index.htm">BARREL BASH   200</a></span></font><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><a href="../index.htm">8</a></span></p>
+        <p class="MsoNormal" style="TEXT-ALIGN: center" align="center"><span class="style1" style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">June 13, 14, 15</span><font face="Arial" size="2"><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><strong> &ndash; </strong></span></font><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><strong>Valley City, ND</strong></span></p>
+        <p align="center" class="MsoNormal">&nbsp;</p>        </td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFF00"><div align="center"><a href="08ValleyCityFriday.html">Friday</a></div></td>
+    <td><div align="center"><a href="08ValleyCitySaturday.html">Saturday</a></div></td>
+    <td><div align="center"><a href="08ValleyCitySunday.html" target="_blank">Sunday</a></div></td>
+  </tr>
+</table>
+<div align="center"> <br />
+  <table cellspacing="0" cellpadding="0" class="excel98">
+    <col width="67" style="width:50pt;" />
+    <col width="83" style="width:62pt;" />
+    <col width="124" style="width:93pt;" />
+    <col width="34" style="width:26pt;" />
+    <col width="161" style="width:121pt;" />
+    <col width="43" span="2" style="width:32pt;" />
+    <col width="46" style="width:35pt;" />
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel99" width="67" style="height:11.25pt;width:50pt;">FNAME</td>
+      <td class="excel99" width="83" style="border-left:none;width:62pt;">LNAME</td>
+      <td class="excel99" width="124" style="border-left:none;width:93pt;">CITY</td>
+      <td class="excel99" width="34" style="border-left:none;width:26pt;">ST</td>
+      <td class="excel99" width="161" style="border-left:none;width:121pt;">HORSE</td>
+      <td class="excel100" width="43" style="border-left:none;width:32pt;">TIME</td>
+      <td class="excel99" width="43" style="border-left:none;width:32pt;">PLACE</td>
+      <td class="excel99" width="46" style="border-left:none;width:35pt;">$WON</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LAURA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CARTER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ORR</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CNF RUNAWAY BULLION</td>
+      <td class="excel100" style="border-top:none;border-left:none;">14.625</td>
+      <td class="excel100" style="border-top:none;border-left:none;">1D1</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$328.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">MARK</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BUGNI</td>
+      <td class="excel100" style="border-top:none;border-left:none;">DICKINSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MNV LET ME RUN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">14.746</td>
+      <td class="excel100" style="border-top:none;border-left:none;">1D2</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$273.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">ASHLEY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GROSS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HINES</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MAGNOLIAS MARK</td>
+      <td class="excel100" style="border-top:none;border-left:none;">14.856</td>
+      <td class="excel100" style="border-top:none;border-left:none;">1D3</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$218.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel101" style="height:11.25pt;border-top:none;">SUSI</td>
+      <td class="excel101" style="border-top:none;border-left:none;">SCHUCHARD</td>
+      <td class="excel101" style="border-top:none;border-left:none;">WATERTOWN</td>
+      <td class="excel101" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel101" style="border-top:none;border-left:none;">Bar Wrangler</td>
+      <td class="excel100" style="border-top:none;border-left:none;">14.901</td>
+      <td class="excel100" style="border-top:none;border-left:none;">1D4</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$164.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LAURA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CARTER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ORR</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WHISKY PLAYMATE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">14.916</td>
+      <td class="excel100" style="border-top:none;border-left:none;">1D5</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$109.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">SABRINA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HAUGEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">PUPOSKY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">PHASE OF ZAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">14.923</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">JESSICA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LALEMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MARSHALL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">EMMITT WHO</td>
+      <td class="excel100" style="border-top:none;border-left:none;">14.972</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">JENNILEE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">THOMPSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WESSINGTON SPRINGS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CEE PLAY GIRL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">14.986</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">SHERRY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">JOHNSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MOTLEY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KNICKER SWEET DASH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.046</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel101" style="height:11.25pt;border-top:none;">KASSIE</td>
+      <td class="excel101" style="border-top:none;border-left:none;">HOHENSTEIN</td>
+      <td class="excel101" style="border-top:none;border-left:none;">SHAKOPEE</td>
+      <td class="excel101" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel101" style="border-top:none;border-left:none;">ROCKY TOP SUE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.062</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">HALEY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HINKER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MITCHELL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HEAVY LENA GO CUT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.072</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">BRUCE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KRABBENHOFT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">PARK RAPIDS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MR REDS SIR PRIZE</td>
+      <td class="excel99" style="border-top:none;border-left:none;">15.087</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">JULIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VOIGT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BEULAH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">JK ANGELS PASS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.09</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">KATELYN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SCHAFFNER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BISMARK</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GO ST PAR&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.114</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">STACY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NELSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CLOQUET</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">I HERD A RUMOR</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.134</td>
+      <td class="excel103" style="border-top:none;border-left:none;">2D1</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$281.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LORI</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ALFSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">JAMESTOWN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND</td>
+      <td class="excel100" style="border-top:none;border-left:none;">TEDDY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.168</td>
+      <td class="excel103" style="border-top:none;border-left:none;">2D2</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$234.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">MOLLY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">OTTO</td>
+      <td class="excel100" style="border-top:none;border-left:none;">FARGO</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LIL' DICK</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.281</td>
+      <td class="excel103" style="border-top:none;border-left:none;">2D3</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$187.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LAURIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VIAENE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MARSHALL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">RED REINDEER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.338</td>
+      <td class="excel103" style="border-top:none;border-left:none;">2D4</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$140.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LISA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HEISER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WR KIRKS EXTRA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.344</td>
+      <td class="excel103" style="border-top:none;border-left:none;">2D5</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$93.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">TARA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HANSEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">JAMESTOWN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SKIPALONG LILY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.347</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel101" style="height:11.25pt;border-top:none;">CODIE</td>
+      <td class="excel101" style="border-top:none;border-left:none;">VAN SAMBEEK</td>
+      <td class="excel101" style="border-top:none;border-left:none;">HERMOSA</td>
+      <td class="excel101" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel101" style="border-top:none;border-left:none;">Not Fair</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.373</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">STACY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NELSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CLOQUET</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BLURRED ROCKET</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.444</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">RENEA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BOLLING</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GREENFIELD</td>
+      <td class="excel100" style="border-top:none;border-left:none;">IA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">FAST FRENCHMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.469</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KUSCHEL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SEBEKA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SIXDRAW MAGRAW</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.474</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">STEPHANIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BENNIS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NORWICH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND</td>
+      <td class="excel100" style="border-top:none;border-left:none;">JAG</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.493</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LYNN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HASTINGS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">DICKINSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">DREAM OF ROMANCE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.623</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">KELCY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">DYKSTRA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SISSETON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD</td>
+      <td class="excel100" style="border-top:none;border-left:none;">PARTNER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.674</td>
+      <td class="excel99" style="border-top:none;border-left:none;">3D1</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$187.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">BETSEY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KUSCHEL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SEBEKA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SENTIMENTAL WARRIOR</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.715</td>
+      <td class="excel100" style="border-top:none;border-left:none;">3D2</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$156.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">AMANDA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KLEIN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SPIRIT WOOD LAKE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND</td>
+      <td class="excel100" style="border-top:none;border-left:none;">DOLLY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.738</td>
+      <td class="excel100" style="border-top:none;border-left:none;">3D3</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$125.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LARRY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GUNDERSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ANGORA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CHIC</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.756</td>
+      <td class="excel100" style="border-top:none;border-left:none;">3D4</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$93.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">TERI</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CROOKS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VALLEY CITY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">TREASURED DUTCHESS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.797</td>
+      <td class="excel100" style="border-top:none;border-left:none;">3D5</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$62.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">JILL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HINS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HURON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">DASHER'S VANZI BAR</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.806</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">TERI</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CROOKS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VALLEY CITY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">FRENCHMAN DASH FOR    CASH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.819</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">JODI</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SIMONS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ABERDEEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SAN PEPPY ROCKS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.864</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">MARY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CALLAHAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">APPLE VALLEY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BLAST OF GAS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.897</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">ERIN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WELKEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VALLEY CITY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MM SNACK</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.904</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">MARY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GRIFFITH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NEED HORSES NAME</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.921</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">ROBERT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VIAENE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MARSHALL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BOOGIE TA FAME</td>
+      <td class="excel100" style="border-top:none;border-left:none;">15.951</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">HEATHER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">COLEMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">JOLLY DOCS DASHER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.047</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">STEPHANIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VOUK</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ST JOSEPH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ROSA COUNTY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.082</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">VALERIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KAMEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ABERDEEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ROSEBUD TOMMY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.113</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">ALLIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SIMONS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ABERDEEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BOSTONS BOBBY SOX</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.182</td>
+      <td class="excel100" style="border-top:none;border-left:none;">4D1</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$140.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">ERIN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WELKEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VALLEY CITY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">OLLIES A SCOOTEN    ANGEL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.224</td>
+      <td class="excel100" style="border-top:none;border-left:none;">4D2</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$117.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">BRUCE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KRABBENHOFT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">PARK RAPIDS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">STREAKIN TWINKIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.231</td>
+      <td class="excel100" style="border-top:none;border-left:none;">4D3</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$93.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">BETSEY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">RONEY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">OAKES</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HIGH DASHER CASH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.25</td>
+      <td class="excel100" style="border-top:none;border-left:none;">4D4</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$70.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">MANDY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KIRCHNER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CLARINDA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">IA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SPECIAL LIKE KING</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.308</td>
+      <td class="excel100" style="border-top:none;border-left:none;">4D5</td>
+      <td class="excel102" align="right" style="border-top:none;border-left:none;">$46.00</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">ERIN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WELKEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VALLEY CITY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CHAMPAGNE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.32</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel101" style="height:11.25pt;border-top:none;">DELLA&nbsp;</td>
+      <td class="excel101" style="border-top:none;border-left:none;">AMDAHL</td>
+      <td class="excel101" style="border-top:none;border-left:none;">WOONSOCKET</td>
+      <td class="excel101" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel101" style="border-top:none;border-left:none;">Poco Maggie LA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.401</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LEAH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VOIGT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BEULAH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ROCKET AND ROLLETTE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.453</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">JULIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ERICKSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BAILEYS TOP FILLY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.621</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">SARA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ERICKSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">A LITTLE BIT OF HONOR</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.733</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">AVA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NILL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KULM</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">OAKLEY (NR)</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.822</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel101" style="height:11.25pt;border-top:none;">CODIE</td>
+      <td class="excel101" style="border-top:none;border-left:none;">VAN SAMBEEK</td>
+      <td class="excel101" style="border-top:none;border-left:none;">HERMOSA</td>
+      <td class="excel101" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel101" style="border-top:none;border-left:none;">Impressive Rocker</td>
+      <td class="excel100" style="border-top:none;border-left:none;">16.975</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">BETTY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WUDTKE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ZIMMERMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GUY'S SANDY LADY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">20.854</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">JENNILEE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">THOMPSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WESSINGTON SPRINGS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LIL DREAMY EYES</td>
+      <td class="excel100" style="border-top:none;border-left:none;">25.931</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">TEEGAM</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WUFFELS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">I AM LEAVING</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">STACY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SCHUBERT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WACONIA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WEBB'S GOOD FRIDAY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">SUNNY RAE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HASKINS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BALDWIN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ROCK HYLL BAY SNIP</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">AMY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VANLITH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BIG STONE CITY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GARAGE SALE BOBBY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">KUSCHEL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SEBEKA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SITTING ON STREAK</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">ROBERT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VIAENE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MARSHALL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CATMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">AMIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BRUGGEMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">TRAIL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">OLENA'S PEPPY TE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">LAURIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">VIAENE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MARSHALL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SUGARS NINNEKAH</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">MICHELE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HAEG</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SHAKOPEE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BECKY STRIPPING WEBB</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel101" style="height:11.25pt;border-top:none;">JENN</td>
+      <td class="excel101" style="border-top:none;border-left:none;">DIDIER</td>
+      <td class="excel101" style="border-top:none;border-left:none;">VALLEY CITY</td>
+      <td class="excel101" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel101" style="border-top:none;border-left:none;">Colonels Maverick</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">KELLIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NOYES</td>
+      <td class="excel100" style="border-top:none;border-left:none;">FINLEY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LADY PUMPER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">EVONNE G</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CREPP</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MAKINEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GRAND DADS MAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">TALLY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GUNDERSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ANGORA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">RUNNER</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">TARA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HANSEN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">JAMESTOWN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SHEZA HOTTIE BUG</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">JESSICA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LALEMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MARSHALL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">RECKLESS MERIT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">SUE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BERG</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LEO'S LEGEND</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">RENEA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BOLLING</td>
+      <td class="excel101" style="border-top:none;border-left:none;">GREENFIELD</td>
+      <td class="excel101" style="border-top:none;border-left:none;">IA</td>
+      <td class="excel101" style="border-top:none;border-left:none;">TROUBLED REGARDS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">MICHELE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MORTENSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WOLVERTON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LEXI</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">SHERRY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WYFFELS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LITCHFIELD</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LIL MATTIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">SCOTT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HARRIS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CANTREADWRITING</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HIGH DASHIN BEAR</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">NACOLE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LEHMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">CROTON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SD</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SHORTY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">TINA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">LENTON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MINOT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND</td>
+      <td class="excel100" style="border-top:none;border-left:none;">JACKSON</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">AMIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">BRUGGEMAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">TRAIL</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ELVIS</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">MEGAN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HAAG</td>
+      <td class="excel100" style="border-top:none;border-left:none;">FREDONIA</td>
+      <td class="excel100" style="border-top:none;border-left:none;">ND</td>
+      <td class="excel100" style="border-top:none;border-left:none;">WILLOW BAY</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+    <tr height="15" style="height:11.25pt;">
+      <td height="15" class="excel100" style="height:11.25pt;border-top:none;">KASSIE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">HOHENSTEIN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">SHAKOPEE</td>
+      <td class="excel100" style="border-top:none;border-left:none;">MN</td>
+      <td class="excel100" style="border-top:none;border-left:none;">GBT ROBERT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">NT</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+      <td class="excel100" style="border-top:none;border-left:none;">&nbsp;</td>
+    </tr>
+  </table>
+  <br />
+</div></body>
+</html>
