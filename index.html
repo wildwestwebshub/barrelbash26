@@ -82,6 +82,8 @@
 
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+    /* keep the sponsor ticker moving - otherwise it freezes mid-scroll and most logos never become visible */
+    .sponsor-track{animation-duration:70s !important; animation-iteration-count:infinite !important;}
   }
 
   /* ---------- rotating sponsor banner ---------- */
