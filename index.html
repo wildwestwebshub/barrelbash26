@@ -1096,9 +1096,9 @@
     { date:'JUL 24–26', title:'$6,000 Open 5D', location:'Chickasha, OK', band:'purpleD', badges:[{key:'ff',label:'FUTURE FORTUNES · $25K'},{key:'brwf'},{key:'pbrip'}], scheduleLink:'schedules/chickasha_2026_schedule.pdf', enterLink:'https://www.sgpevents.net/?page=login&forevt=2976', start:'2026-07-24', end:'2026-07-26' },
     { date:'AUG 28–30', title:'$5,000 Open 4D', location:'Springfield, MO', band:'teal', badges:[{key:'ff',label:'FUTURE FORTUNES · $10K'},{key:'brwf'},{key:'pbrip'}], scheduleLink:'#', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-08-28', end:'2026-08-30' },
     { date:'SEPT 18–20', title:'Seniors Only 6D - $6,000 Added', location:'Shawnee, OK', band:'blue', big:true, seniorsArt:true, badges:[], scheduleLink:'schedules/26%20SENIORS%20ONLY%20SCHEDULe%20CORRECTION.pdf', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-09-18', end:'2026-09-20' },
-    { date:'OCT 30–NOV 1', title:'$6,000 Open 5D', location:'Gifford, IL', band:'purpleD', badges:[{key:'ff',label:'FUTURE FORTUNES · $10K'},{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'openhorse'}], scheduleLink:'schedules/GIFFORD_IL_SCHEDULE_WITH_CORRECTION_102726.pdf', rvLink:'https://www.gordyvilleusa.com/reservations', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-10-30', end:'2026-11-01', entries:{ open:['2026-09-30T12:00:00-05:00','Sep 30, noon CT'], close:['2026-10-26T09:00:00-05:00','Oct 26, 9 AM CT'], late:['2026-10-27T12:00:00-05:00','Oct 27, noon CT'] } },
+    { date:'OCT 30–NOV 1', title:'$6,000 Open 5D', location:'Gifford, IL', band:'purpleD', badges:[{key:'ff',label:'FUTURE FORTUNES · $10K'},{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'openhorse'}], scheduleLink:'schedules/GIFFORD_IL_SCHEDULE_WITH_CORRECTION_102726.pdf', stallLink:'schedules/GIFFORD_STALL_ASSIGNMENTS_10_27_26.pdf', rvLink:'https://www.gordyvilleusa.com/reservations', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-10-30', end:'2026-11-01', entries:{ open:['2026-09-30T12:00:00-05:00','Sep 30, noon CT'], close:['2026-10-26T09:00:00-05:00','Oct 26, 9 AM CT'], late:['2026-10-27T12:00:00-05:00','Oct 27, noon CT'] } },
     { date:'NOV 6–8', title:'$3,500 Open 4D', location:'Hutchinson, KS', band:'teal', badges:[{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'openhorse'}], scheduleLink:'schedules/hutchinson_nov_2026_schedule.pdf', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-11-06', end:'2026-11-08', entries:{ open:['2026-10-06T12:00:00-05:00','Oct 6, noon CT'], close:['2026-11-02T09:00:00-06:00','Nov 2, 9 AM CT'], late:['2026-11-03T12:00:00-06:00','Nov 3, noon CT'] } },
-    { date:'NOV 27–29', title:'$5,000 Open 5D', location:'Inola, OK', band:'purpleD', badges:[{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'brif'},{key:'openhorse'}], scheduleLink:'schedules/INOLA_OK_BARREL_BASH_2026_NOV_SCHEDULE.pdf', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-11-27', end:'2026-11-29', entries:{ open:['2026-10-27T12:00:00-05:00','Oct 27, noon CT'], close:['2026-11-23T09:00:00-06:00','Nov 23, 9 AM CT'], late:['2026-11-24T12:00:00-06:00','Nov 24, noon CT'] } },
+    { date:'NOV 27–29', title:'$5,000 Open 5D', location:'Inola, OK', band:'purpleD', badges:[{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'brif'},{key:'openhorse'}], scheduleLink:'schedules/INOLA_OK_BARREL_BASH_2026_NOV_SCHEDULE.pdf', rvLink:'https://riverbend-ok.com', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-11-27', end:'2026-11-29', entries:{ open:['2026-10-27T12:00:00-05:00','Oct 27, noon CT'], close:['2026-11-23T09:00:00-06:00','Nov 23, 9 AM CT'], late:['2026-11-24T12:00:00-06:00','Nov 24, noon CT'] } },
     { date:"JAN 1–3 '27", title:'TBA - 2027 Schedule', location:'Shawnee, OK', band:'teal', badges:[{key:'wpra'}], start:'2027-01-01', end:'2027-01-03', entries:{ open:['2026-12-01T12:00:00-06:00','Dec 1, noon CT'], close:['2026-12-28T09:00:00-06:00','Dec 28, 9 AM CT'], late:['2026-12-29T12:00:00-06:00','Dec 29, noon CT'] } },
   ];
 
@@ -1131,6 +1131,7 @@
     const heroActionsHtml = `
       ${heroNext.enterLink ? `<a class="btn btn-gold" href="${heroNext.enterLink}" target="_blank" rel="noopener">Enter Online</a>` : ''}
       ${heroNext.scheduleLink && heroNext.scheduleLink !== '#' ? `<a class="btn btn-outline" href="${heroNext.scheduleLink}" target="_blank" rel="noopener">Full Schedule PDF</a>` : ''}
+      ${heroNext.stallLink ? `<a class="btn btn-outline" href="${heroNext.stallLink}" target="_blank" rel="noopener">Stall Assignments</a>` : ''}
       ${heroNext.rvLink ? `<a class="btn btn-outline" href="${heroNext.rvLink}" target="_blank" rel="noopener">RV Reservations</a>` : ''}
     `;
     document.getElementById('heroNextActions').innerHTML = heroActionsHtml;
@@ -1177,6 +1178,7 @@
       ${ev.enterLink ? `<a class="sched-action enter" href="${ev.enterLink}" target="_blank" rel="noopener">Enter Online →</a>` : ''}
       ${ev.resultsLink ? `<a class="sched-action" href="${ev.resultsLink}" target="_blank" rel="noopener">Results →</a>` : ''}
       ${ev.scheduleLink ? `<a class="sched-action" href="${ev.scheduleLink}" target="_blank" rel="noopener">Schedule →</a>` : ''}
+      ${ev.stallLink ? `<a class="sched-action" href="${ev.stallLink}" target="_blank" rel="noopener">Stall Assignments →</a>` : ''}
       ${ev.rvLink ? `<a class="sched-action" href="${ev.rvLink}" target="_blank" rel="noopener">RV Reservations →</a>` : ''}
     `;
     row.innerHTML = `
@@ -1186,7 +1188,7 @@
       </div>
       <div class="sched-title">${ev.title}</div>
       ${badgesHtml ? `<div class="sched-badges">${badgesHtml}</div>` : ''}
-      ${(ev.enterLink || ev.resultsLink || ev.scheduleLink || ev.rvLink) ? `<div class="sched-actions">${actionsHtml}</div>` : ''}
+      ${(ev.enterLink || ev.resultsLink || ev.scheduleLink || ev.stallLink || ev.rvLink) ? `<div class="sched-actions">${actionsHtml}</div>` : ''}
       ${entryInfoHtml(ev)}
       ${ev.seniorsArt ? `<div class="seniors-banner"><img src="${seniorsArt}" alt="Barrel Bash Seniors Only 2026"></div>` : ''}
     `;
