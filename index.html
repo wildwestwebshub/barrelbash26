@@ -396,6 +396,9 @@
   .sched-badges{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:2px;}
   .sched-actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:4px;}
   /* Entry dates: collapsed one-liner, tap to expand */
+  .event-note{margin-top:8px; background:rgba(255,196,0,0.12); border:1px solid rgba(255,196,0,0.45); border-radius:10px; padding:10px 12px; font-size:12.5px; line-height:1.5; color:#fff; text-align:left; text-shadow:none;}
+  .event-note .en-label{display:block; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#FFD54A; margin-bottom:3px;}
+  .event-note a{color:#FFD54A; font-weight:700;}
   .entry-info{margin-top:8px; background:var(--pink-dim); border:1px solid rgba(255,255,255,0.18); border-radius:10px; text-shadow:none; color:#fff; font-size:12.5px; line-height:1.45;}
   .entry-info summary{list-style:none; cursor:pointer; display:flex; align-items:center; gap:8px; padding:8px 12px; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;}
   .entry-info summary::-webkit-details-marker{display:none;}
@@ -1104,7 +1107,7 @@
     { date:'SEPT 18–20', title:'Seniors Only 6D - $6,000 Added', location:'Shawnee, OK', band:'blue', big:true, seniorsArt:true, badges:[], scheduleLink:'schedules/26%20SENIORS%20ONLY%20SCHEDULe%20CORRECTION.pdf', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-09-18', end:'2026-09-20' },
     { date:'OCT 30–NOV 1', title:'$6,000 Open 5D', location:'Gifford, IL', band:'purpleD', badges:[{key:'ff',label:'FUTURE FORTUNES · $10K'},{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'openhorse'}], scheduleLink:'schedules/GIFFORD_IL_SCHEDULE_WITH_CORRECTION_102726.pdf', stallLink:'https://docs.google.com/spreadsheets/d/1UNj6_bkaK_NXLCMvcASriqcHCbSvzmFCuF-bO5ov4rg/edit?usp=sharing', stallMapLink:'schedules/GIFFORD_STALL_MAP_10_29_26_v2.pdf', rvLink:'https://www.gordyvilleusa.com/reservations', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-10-30', end:'2026-11-01', entries:{ open:['2026-09-30T12:00:00-05:00','Sep 30, noon CT'], close:['2026-10-26T09:00:00-05:00','Oct 26, 9 AM CT'], late:['2026-10-27T12:00:00-05:00','Oct 27, noon CT'] } },
     { date:'NOV 6–8', title:'$3,500 Open 4D', location:'Hutchinson, KS', band:'teal', badges:[{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'openhorse'}], scheduleLink:'schedules/HUTCHINSON_KS_SCHEDULE_2026_NOVEMBER_UPDATED_11_3_26.pdf', stallMapLink:'schedules/HUTCHINSON_KS_STALL_MAP_2026.pdf', stallLink:'https://docs.google.com/spreadsheets/u/0/d/170vp6x1Yx585fOtfIOFDYtCE8592Eu22-j35i06cuNs/htmlview', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-11-06', end:'2026-11-08', entries:{ open:['2026-10-06T12:00:00-05:00','Oct 6, noon CT'], close:['2026-11-02T09:00:00-06:00','Nov 2, 9 AM CT'], late:['2026-11-03T12:00:00-06:00','Nov 3, noon CT'] } },
-    { date:'NOV 27–29', title:'$5,000 Open 5D', location:'Inola, OK', band:'purpleD', badges:[{key:'bbrxtra'},{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'brif'},{key:'openhorse'}], scheduleLink:'schedules/INOLA_OK_BARREL_BASH_2026_NOV_SCHEDULE.pdf', rvLink:'https://riverbend-ok.com', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-11-27', end:'2026-11-29', entries:{ open:['2026-10-27T12:00:00-05:00','Oct 27, noon CT'], close:['2026-11-23T09:00:00-06:00','Nov 23, 9 AM CT'], late:['2026-11-24T12:00:00-06:00','Nov 24, noon CT'] } },
+    { date:'NOV 27–29', title:'$5,000 Open 5D', location:'Inola, OK', noteLabel:'Shavings', note:'If you need shavings that were not pre-ordered, please call <a href="tel:9183617188">918-361-7188</a> to order. Facility suggests 2 per stall. ZERO come with stall. <strong>ABSOLUTELY NO OUTSIDE SHAVINGS ARE ALLOWED.</strong>', band:'purpleD', badges:[{key:'bbrxtra'},{key:'brwf'},{key:'pbrip'},{key:'wpra'},{key:'brif'},{key:'openhorse'}], scheduleLink:'schedules/INOLA_OK_BARREL_BASH_2026_NOV_SCHEDULE.pdf', rvLink:'https://riverbend-ok.com', enterLink:'https://www.sgpevents.net/?page=login', start:'2026-11-27', end:'2026-11-29', entries:{ open:['2026-10-27T12:00:00-05:00','Oct 27, noon CT'], close:['2026-11-23T09:00:00-06:00','Nov 23, 9 AM CT'], late:['2026-11-24T12:00:00-06:00','Nov 24, noon CT'] } },
     { date:"JAN 1–3 '27", title:'TBA - 2027 Schedule', location:'Shawnee, OK', band:'teal', badges:[{key:'wpra'}], start:'2027-01-01', end:'2027-01-03', entries:{ open:['2026-12-01T12:00:00-06:00','Dec 1, noon CT'], close:['2026-12-28T09:00:00-06:00','Dec 28, 9 AM CT'], late:['2026-12-29T12:00:00-06:00','Dec 29, noon CT'] } },
   ];
 
@@ -1149,6 +1152,9 @@
   }
 
   // ---------- entry dates (collapsed one-liner that expands) ----------
+  function noteHtml(ev){
+    return ev.note ? `<div class="event-note"><span class="en-label">${ev.noteLabel || 'Note'}</span>${ev.note}</div>` : '';
+  }
   function entryInfoHtml(ev){
     const en = ev.entries; if(!en) return '';
     const now = new Date();
@@ -1198,12 +1204,13 @@
       ${badgesHtml ? `<div class="sched-badges">${badgesHtml}</div>` : ''}
       ${(ev.enterLink || ev.resultsLink || ev.scheduleLink || ev.stallMapLink || ev.stallLink || ev.rvLink) ? `<div class="sched-actions">${actionsHtml}</div>` : ''}
       ${entryInfoHtml(ev)}
+      ${noteHtml(ev)}
       ${ev.seniorsArt ? `<div class="seniors-banner"><img src="${seniorsArt}" alt="Barrel Bash Seniors Only 2026"></div>` : ''}
     `;
     list.appendChild(row);
   });
 
-  if (window.__heroNext){ document.getElementById('heroNextEntries').innerHTML = entryInfoHtml(window.__heroNext); }
+  if (window.__heroNext){ document.getElementById('heroNextEntries').innerHTML = entryInfoHtml(window.__heroNext) + noteHtml(window.__heroNext); }
 
   // ---------- scroll-reveal animations ----------
   const revealObserver = new IntersectionObserver((entries) => {
